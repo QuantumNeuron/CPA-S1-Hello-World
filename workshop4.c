@@ -73,7 +73,7 @@ int main() {
 			printf("\nEnter a number between 1 and %d to see the average temperature for the entered number of days, enter a negative number to exit: ", userCount + 1);
 			scanf("%d", &userIn);
 			while (userIn == 0 || userIn > userCount + 1) { //Error checking loop
-				printf("\nInvalid entry, please enter a number between 1 and 4, inclusive: ");
+				printf("\nInvalid entry, please enter a number between 1 and %d, inclusive: ", userCount + 1);
 				scanf("%d", &userIn);
 			}
 			for (count = 0; count < userIn; count++) { //For loop to find average
